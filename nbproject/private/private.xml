@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/forum.test/models/Index.php</file>
+            <file>file:/var/www/forum.test/obrabotchik_formi.php</file>
+            <file>file:/var/www/forum.test/views/index.php</file>
+            <file>file:/var/www/forum.test/controllers/IndexController.php</file>
+            <file>file:/var/www/forum.test/views/header.php</file>
+            <file>file:/var/www/forum.test/views/footer.php</file>
+            <file>file:/var/www/forum.test/forma.php</file>
+            <file>file:/var/www/forum.test/components/db_connect.php</file>
+            <file>file:/var/www/forum.test/controllers/FeederController.php</file>
+            <file>file:/var/www/forum.test/config/routes.php</file>
+            <file>file:/var/www/forum.test/views/menus.php</file>
+            <file>file:/var/www/forum.test/css/reset.css</file>
+            <file>file:/var/www/forum.test/index.php</file>
+            <file>file:/var/www/forum.test/components/Router.php</file>
+            <file>file:/var/www/forum.test/css/style2.css</file>
+            <file>file:/var/www/forum.test/views/index/Index.php</file>
+        </group>
+    </open-files>
+</project-private>
