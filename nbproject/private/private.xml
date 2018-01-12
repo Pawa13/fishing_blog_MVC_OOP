@@ -3,13 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/var/www/forum.test/models/Spinning.php</file>
             <file>file:/var/www/forum.test/models/Index.php</file>
-            <file>file:/var/www/forum.test/config/routes.php</file>
-            <file>file:/var/www/forum.test/views/feeder/Feeder.php</file>
+            <file>file:/var/www/forum.test/controllers/SpinningController.php</file>
+            <file>file:/var/www/forum.test/controllers/IndexController.php</file>
+            <file>file:/var/www/forum.test/views/header.php</file>
             <file>file:/var/www/forum.test/controllers/FeederController.php</file>
+            <file>file:/var/www/forum.test/views/spinning/Spinning_1.php</file>
+            <file>file:/var/www/forum.test/models/Spinning_1.php</file>
+            <file>file:/var/www/forum.test/views/spinning/Spinning.php</file>
+            <file>file:/var/www/forum.test/config/routes.php</file>
+            <file>file:/var/www/forum.test/models/Feeder.php</file>
+            <file>file:/var/www/forum.test/views/menus.php</file>
+            <file>file:/var/www/forum.test/views/feeder/Feeder.php</file>
+            <file>file:/var/www/forum.test/views/feeder/Feeder_1.php</file>
+            <file>file:/var/www/forum.test/models/Feeder_1.php</file>
             <file>file:/var/www/forum.test/index.php</file>
-            <file>file:/var/www/forum.test/css/style2.css</file>
             <file>file:/var/www/forum.test/components/Router.php</file>
+            <file>file:/var/www/forum.test/css/style2.css</file>
+            <file>file:/var/www/forum.test/views/index/Index.php</file>
         </group>
     </open-files>
 </project-private>
