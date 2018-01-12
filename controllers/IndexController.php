@@ -1,5 +1,12 @@
 <?php
+class IndexController {
 
-include 'models/Index.php';
-include dirname(__DIR__).'/views/index/Index.php';
+    public static function actionInd() {
+        include 'models/Index.php';
+        include_once (realpath('views/index/Index.php'));
+              
+    }
+
+}
+
 

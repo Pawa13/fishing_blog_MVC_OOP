@@ -29,6 +29,10 @@ div{
     text-decoration: none;
     color: #2F4F4F;/* Отменяем подчеркивание у ссылки */
    } 
+   img {
+       max-width: 100%;
+       padding-right: 1%;
+   }
 
 header{
 	text-align: center;

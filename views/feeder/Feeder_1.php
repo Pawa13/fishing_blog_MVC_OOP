@@ -3,28 +3,23 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Сайт о рыбалке</title>
+		<title>Форум о рыбалке</title>
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/style2.css">
 	</head>
 <body>
 	<div>
             <header>
-		 <?php include dirname(__DIR__).'/header.php';?>
-                          <h1>Главная</h1>
+		 <img class="headerimg" src="../img/header2.png"> 
+                           <h1>Фидер</h1>
             </header>
             <div class="menu">
                   <?php include dirname(__DIR__).'/menus.php';?>
             </div>
-            <section id="page">
-   		<div id="main">
+              	<div id="main">
                     
-                      <?php IndexContent::getAlldb();?>  
+                      <?php FeederArticl::OneArticl($id); ?>
                 </div>
-                <aside>
-                       <?php include dirname(__DIR__).'/sidebar.php';?>    
-                </aside>
-            </section>
             <footer>
                      <?php include dirname(__DIR__).'/sidebar.php';?>
             </footer>

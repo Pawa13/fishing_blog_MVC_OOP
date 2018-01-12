@@ -3,30 +3,30 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Фидер</title>
+		<title>Форум о рыбалке</title>
 		<link rel="stylesheet" href="../css/reset.css">
 		<link rel="stylesheet" href="../css/style2.css">
 	</head>
 <body>
 	<div>
             <header>
-                  <?php include 'header.php';?>	
-                   <h1>Фидер</h1>
+		 <img class="headerimg" src="../img/header2.png"> 
+                          <h1>Спиннинг</h1>
             </header>
             <div class="menu">
-                  <?php include 'menus.php';?>
+                  <?php include dirname(__DIR__).'/menus.php';?>
             </div>
             <section id="page">
    		<div id="main">
                     
-                      <?php include 'content.php';?>      
+                      <?php SpinningContent::getAlldb(); ?>
                 </div>
                 <aside>
-                       <?php include 'sidebar.php';?>    
+                       <?php include dirname(__DIR__).'/sidebar.php';?>    
                 </aside>
             </section>
             <footer>
-                     <?php include 'sidebar.php';?>
+                     <?php include dirname(__DIR__).'/sidebar.php';?>
             </footer>
 	</div>
 </body>

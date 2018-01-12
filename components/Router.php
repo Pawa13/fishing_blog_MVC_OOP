@@ -1,13 +1,4 @@
 <?php
-//обрабатываем запрос forum.test/index.php или forum.test
-  $r = "/index.php";
-$u = $_SERVER['REQUEST_URI'];
-if(preg_match("~$u~", $r)) {
-    require_once 'controllers/IndexController.php';
-}
-//запускаем роутер для обработки других запросов
- else {
-      
 
         class Router
     {
@@ -29,14 +20,13 @@ if(preg_match("~$u~", $r)) {
              if (preg_match("~$uriPattern~", $uri)){
                    /* если находим, то разбиваем строку по слешу 
                     * на массив и заносим его в $segments*/
-                 $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
-                   $segments = explode('/',$internalRoute);
-                    /* получаем имя контроллера, который будет обрабатывать 
+                   $segments = explode('/',$path);
+                   /* получаем имя контроллера, который будет обрабатывать 
                     * пришедший запрос, извлекая первое слово (элемент) 
                     * из массива $segments и добавляя его к .'Controller'
                     * при этом удаляя его из массива $segments*/
                    $controllerName = array_shift($segments).'Controller';
-                   //делаем имя котроллера с заглавной буквы
+                    //делаем имя котроллера с заглавной буквы
                    $controllerName = ucfirst($controllerName);
                     /*получаем имя метода (экшна) который будит 
                     * работать в этом контроллере из массива $segments
@@ -49,27 +39,24 @@ if(preg_match("~$u~", $r)) {
                    вычисляем его имя*/
                    $controllerFile = 'controllers/'.$controllerName.'.php';
                    if (file_exists($controllerFile)){
-                       include_once ($controllerFile);
+                      include_once ($controllerFile);
                     }
+                  
                     //создаем объект подлюченного класса include_once ($controllerFile) 
                     $controllerObject = new $controllerName;
+                       
                     //проверяем наличие метода и запускаем его
                     $result = $controllerObject->$actionName($parameters);
-                    if ($result != null){
-                     /* Внимание! При создании метода этого класса, его имя должно
-                     * совпадать с тем что прописано в файле роутов route.php
-                     */
-                        break;
-                         /*после выполнения метода прерываем цикл поиска и фактически
-                          * передав управление найденному контроллеру
-                          */
+                          break;
+                        
                     }
                                  
                }
            }
         }
-    }
-
-    $router = new Router;
+        $router = new Router;
     $router->run();
- }
+
+    //}
+
+    
