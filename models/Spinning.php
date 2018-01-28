@@ -12,7 +12,7 @@ class SpinningContent {
               
         $result = $db->query('SELECT ID,Date,Categories,Articl_name,'
                 .'SUBSTRING(Text, 1, 400),Img_little FROM'
-                .' Aticls WHERE Categories = "spinning" ORDER BY ID DESC LIMIT 5');
+                .' aticls WHERE Categories = "spinning" ORDER BY ID DESC LIMIT 5');
         $result->setFetchMode(PDO::FETCH_NUM);
           while($row = $result->fetch()){
             echo "<br>";

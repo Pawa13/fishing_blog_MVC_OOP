@@ -12,7 +12,7 @@ class SpinningArticl {
               
         $result = $db->query('SELECT ID,Date,Categories,Articl_name,'
                 .'Text,Img_big FROM'
-                .' Aticls WHERE ID='.$id);
+                .' aticls WHERE ID='.$id);
         $result->setFetchMode(PDO::FETCH_NUM);
           while($row = $result->fetch()){
             echo "<br>";

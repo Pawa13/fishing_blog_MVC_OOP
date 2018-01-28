@@ -10,7 +10,7 @@ class IndexContent {
               
         $result = $db->query('SELECT ID,Date,Categories,Articl_name,'
                 .'SUBSTRING(Text, 1, 600),Img_little FROM'
-                .' Aticls ORDER BY ID DESC LIMIT 5');
+                .' aticls ORDER BY ID DESC LIMIT 5');
         $result->setFetchMode(PDO::FETCH_NUM);
           while($row = $result->fetch()){
         echo "<br>";
